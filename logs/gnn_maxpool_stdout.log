@@ -1,0 +1,23 @@
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/rishik/.local/lib/python3.12/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at4_ops16div__Tensor_mode4callERNS_6TensorERKS2_St8optionalIN3c1017basic_string_viewIcEEE
+  import torch_geometric.typing
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/rishik/.local/lib/python3.12/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN5torch8autograd12VariableInfoC1ERKN2at6TensorE
+  import torch_geometric.typing
+node_dim=29, n_drugs=1725, n_sigs=103989
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/utils/_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+  [maxpool:full:0] 103989 sigs, 25 epochs in 162.0s, final loss=1.2260 (init=4.9454)
+full regime embedded (166s elapsed)
+  [maxpool:classholdout:AED:0] 103319 sigs, 25 epochs in 162.4s, final loss=1.2419 (init=4.9480)
+AED: within-cos full=0.2674 cold(maxpool)=0.2428 | to-bg full=0.1627 cold=0.1699 (329s elapsed)
+  [maxpool:classholdout:Statin:0] 103773 sigs, 25 epochs in 164.3s, final loss=1.2488 (init=4.9444)
+Statin: within-cos full=0.4591 cold(maxpool)=0.4154 | to-bg full=0.1569 cold=0.1648 (493s elapsed)
+  [maxpool:classholdout:SSRI:0] 103737 sigs, 25 epochs in 165.2s, final loss=1.2365 (init=4.9454)
+SSRI: within-cos full=0.3541 cold(maxpool)=0.4079 | to-bg full=0.1662 cold=0.1789 (659s elapsed)
+  [maxpool:classholdout:NSAID:0] 103653 sigs, 25 epochs in 162.0s, final loss=1.2468 (init=4.9698)
+NSAID: within-cos full=0.3421 cold(maxpool)=0.3541 | to-bg full=0.1694 cold=0.1879 (821s elapsed)
+  [maxpool:classholdout:BetaBlocker:0] 103737 sigs, 25 epochs in 160.6s, final loss=1.2413 (init=4.9540)
+BetaBlocker: within-cos full=0.5224 cold(maxpool)=0.4949 | to-bg full=0.1711 cold=0.1842 (981s elapsed)
+  [maxpool:classholdout:Antipsychotic:0] 103695 sigs, 25 epochs in 163.5s, final loss=1.2333 (init=4.9434)
+Antipsychotic: within-cos full=0.2882 cold(maxpool)=0.3983 | to-bg full=0.1684 cold=0.2030 (1145s elapsed)
+
+Wrote gnn_maxpool_diagnostics.csv, DONE in 1145.1s

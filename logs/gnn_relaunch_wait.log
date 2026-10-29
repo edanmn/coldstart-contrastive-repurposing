@@ -1,0 +1,16 @@
+Sat Oct 24 07:42:16 CDT 2026: idea2 still running, GPU used=24138MiB
+Sat Oct 24 07:44:17 CDT 2026: idea2 still running, GPU used=24141MiB
+Sat Oct 24 07:46:17 CDT 2026: idea2 still running, GPU used=24147MiB
+Sat Oct 24 07:48:17 CDT 2026: idea2 still running, GPU used=24147MiB
+Sat Oct 24 07:50:17 CDT 2026: idea2 still running, GPU used=24149MiB
+Sat Oct 24 07:52:17 CDT 2026: idea2 still running, GPU used=24149MiB
+Sat Oct 24 07:54:17 CDT 2026: idea2 still running, GPU used=24149MiB
+Sat Oct 24 07:56:17 CDT 2026: idea2 still running, GPU used=24149MiB
+Sat Oct 24 07:58:17 CDT 2026: idea2 still running, GPU used=24155MiB
+Sat Oct 24 08:00:17 CDT 2026: idea2 still running, GPU used=24155MiB
+Sat Oct 24 08:02:17 CDT 2026: idea2 still running, GPU used=24218MiB
+Sat Oct 24 08:04:17 CDT 2026: idea2 still running, GPU used=24220MiB
+Sat Oct 24 08:06:17 CDT 2026: idea2 still running, GPU used=24271MiB
+idea2 process 1662249 has exited, GPU should be free
+Launching gnn_variant_auroc_followup.py at Sat Oct 24 08:08:17 CDT 2026
+Script exited with code 0 at Sat Oct 24 09:39:44 CDT 2026

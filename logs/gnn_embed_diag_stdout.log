@@ -1,0 +1,21 @@
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/rishik/.local/lib/python3.12/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at4_ops16div__Tensor_mode4callERNS_6TensorERKS2_St8optionalIN3c1017basic_string_viewIcEEE
+  import torch_geometric.typing
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/rishik/.local/lib/python3.12/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN5torch8autograd12VariableInfoC1ERKN2at6TensorE
+  import torch_geometric.typing
+node_dim=29, n_drugs=1725, n_sigs=103989
+  [pretrain:full:0] 103989 sigs, 25 epochs in 167.7s, final loss=1.4171 (init=5.0735)
+full regime embedded (172s elapsed)
+  [pretrain:classholdout:AED:0] 103319 sigs, 25 epochs in 169.2s, final loss=1.4220 (init=5.0492)
+AED: within-cos full=0.2939 cold=0.2422 | to-bg full=0.2262 cold=0.1951 | NN5 same-class frac full=0.050 cold=0.100 (342s elapsed)
+  [pretrain:classholdout:Statin:0] 103773 sigs, 25 epochs in 163.2s, final loss=1.4295 (init=5.0434)
+Statin: within-cos full=0.5873 cold=0.5778 | to-bg full=0.2173 cold=0.2128 | NN5 same-class frac full=0.480 cold=0.440 (505s elapsed)
+  [pretrain:classholdout:SSRI:0] 103737 sigs, 25 epochs in 164.3s, final loss=1.4346 (init=5.0592)
+SSRI: within-cos full=0.4517 cold=0.4444 | to-bg full=0.2272 cold=0.2447 | NN5 same-class frac full=0.067 cold=0.100 (669s elapsed)
+  [pretrain:classholdout:NSAID:0] 103653 sigs, 25 epochs in 164.4s, final loss=1.4321 (init=5.0708)
+NSAID: within-cos full=0.4260 cold=0.3672 | to-bg full=0.2686 cold=0.2427 | NN5 same-class frac full=0.150 cold=0.100 (834s elapsed)
+  [pretrain:classholdout:BetaBlocker:0] 103737 sigs, 25 epochs in 165.7s, final loss=1.4354 (init=5.0542)
+BetaBlocker: within-cos full=0.5626 cold=0.6011 | to-bg full=0.2276 cold=0.2358 | NN5 same-class frac full=0.167 cold=0.267 (1000s elapsed)
+  [pretrain:classholdout:Antipsychotic:0] 103695 sigs, 25 epochs in 167.6s, final loss=1.4149 (init=5.0558)
+Antipsychotic: within-cos full=0.4217 cold=0.4033 | to-bg full=0.2350 cold=0.2248 | NN5 same-class frac full=0.057 cold=0.057 (1167s elapsed)
+
+Wrote gnn_embedding_diagnostics.csv, DONE in 1167.4s

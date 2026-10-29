@@ -1,0 +1,22 @@
+AED: n_pos=16, trained 3 size-matched random-holdout models (305s elapsed)
+Statin: n_pos=5, trained 3 size-matched random-holdout models (615s elapsed)
+SSRI: n_pos=6, trained 3 size-matched random-holdout models (915s elapsed)
+NSAID: n_pos=8, trained 3 size-matched random-holdout models (1225s elapsed)
+BetaBlocker: n_pos=6, trained 3 size-matched random-holdout models (1539s elapsed)
+Antipsychotic: n_pos=7, trained 3 size-matched random-holdout models (1851s elapsed)
+class          view     
+AED            concat       0.551852
+               structure    0.571519
+Antipsychotic  concat       0.563000
+               structure    0.560222
+BetaBlocker    concat       0.934444
+               structure    0.940556
+NSAID          concat       0.710741
+               structure    0.757630
+SSRI           concat       0.662111
+               structure    0.703889
+Statin         concat       0.945778
+               structure    0.959444
+Name: auroc, dtype: float64
+
+Wrote ../results/random_holdout_per_class.csv, DONE in 1864.6s

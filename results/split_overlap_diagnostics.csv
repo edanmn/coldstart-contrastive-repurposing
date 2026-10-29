@@ -1,0 +1,7 @@
+cls,n_pos,n_test_pos,n_possible_subsets,n_unique_realized,mean_pairwise_jaccard,max_drug_appearances,min_drug_appearances
+AED,16,6,8008,10,0.22444444444444445,6,1
+Statin,5,2,10,7,0.30370370370370375,6,1
+SSRI,6,2,15,7,0.28888888888888886,7,1
+NSAID,8,3,56,9,0.24444444444444435,6,2
+BetaBlocker,6,2,15,7,0.28888888888888886,7,1
+Antipsychotic,7,2,21,7,0.2518518518518519,6,1

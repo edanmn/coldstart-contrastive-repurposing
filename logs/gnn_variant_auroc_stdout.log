@@ -1,0 +1,61 @@
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/rishik/.local/lib/python3.12/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at4_ops16div__Tensor_mode4callERNS_6TensorERKS2_St8optionalIN3c1017basic_string_viewIcEEE
+  import torch_geometric.typing
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/rishik/.local/lib/python3.12/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN5torch8autograd12VariableInfoC1ERKN2at6TensorE
+  import torch_geometric.typing
+node_dim=29, n_drugs=1725, n_sigs=103989
+  [pretrain:frozen-src-full:0] 103989 sigs, 25 epochs in 168.3s, final loss=1.4076 (init=5.0733)
+frozen-extractor source (standard full) embedded (177s elapsed)
+  [frozen-extractor:frozen_extractor:classholdout:AED:0] 103319 sigs, 25 epochs in 1091.1s, final loss=1.2404 (init=4.4293), trainable=930305 frozen=36864
+[frozen_extractor] AED: auroc full=0.737 cold=0.760 delta=+0.023 p=0.0645 (1273s elapsed)
+  [frozen-extractor:frozen_extractor:classholdout:Statin:0] 103773 sigs, 25 epochs in 215.7s, final loss=1.2326 (init=4.4265), trainable=930305 frozen=36864
+[frozen_extractor] Statin: auroc full=0.989 cold=0.987 delta=-0.002 p=1.0000 (1493s elapsed)
+  [frozen-extractor:frozen_extractor:classholdout:SSRI:0] 103737 sigs, 25 epochs in 215.7s, final loss=1.2394 (init=4.3947), trainable=930305 frozen=36864
+[frozen_extractor] SSRI: auroc full=0.976 cold=0.941 delta=-0.035 p=0.0039 (1712s elapsed)
+  [frozen-extractor:frozen_extractor:classholdout:NSAID:0] 103653 sigs, 25 epochs in 215.5s, final loss=1.2406 (init=4.4661), trainable=930305 frozen=36864
+[frozen_extractor] NSAID: auroc full=0.806 cold=0.752 delta=-0.054 p=0.0039 (1931s elapsed)
+  [frozen-extractor:frozen_extractor:classholdout:BetaBlocker:0] 103737 sigs, 25 epochs in 218.4s, final loss=1.2446 (init=4.4307), trainable=930305 frozen=36864
+[frozen_extractor] BetaBlocker: auroc full=0.988 cold=0.989 delta=+0.002 p=0.2500 (2152s elapsed)
+  [frozen-extractor:frozen_extractor:classholdout:Antipsychotic:0] 103695 sigs, 25 epochs in 214.6s, final loss=1.2373 (init=4.4022), trainable=930305 frozen=36864
+[frozen_extractor] Antipsychotic: auroc full=0.966 cold=0.974 delta=+0.009 p=0.0156 (2370s elapsed)
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/utils/_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+  [maxpool:maxpool:full:0] 103989 sigs, 25 epochs in 234.4s, final loss=1.2337 (init=4.9469)
+maxpool full embedded (2604s elapsed)
+  [maxpool:maxpool:classholdout:AED:0] 103319 sigs, 25 epochs in 231.8s, final loss=1.2374 (init=4.9484)
+[maxpool] AED: auroc full=0.779 cold=0.811 delta=+0.032 p=0.3223 (2841s elapsed)
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/utils/_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+  [maxpool:maxpool:classholdout:Statin:0] 103773 sigs, 25 epochs in 234.2s, final loss=1.2473 (init=4.9428)
+[maxpool] Statin: auroc full=0.987 cold=0.957 delta=-0.029 p=0.0625 (3079s elapsed)
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/utils/_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+  [maxpool:maxpool:classholdout:SSRI:0] 103737 sigs, 25 epochs in 232.0s, final loss=1.2340 (init=4.9456)
+[maxpool] SSRI: auroc full=0.960 cold=0.950 delta=-0.010 p=0.5000 (3315s elapsed)
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/utils/_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+  [maxpool:maxpool:classholdout:NSAID:0] 103653 sigs, 25 epochs in 228.3s, final loss=1.2366 (init=4.9712)
+[maxpool] NSAID: auroc full=0.824 cold=0.754 delta=-0.070 p=0.0508 (3547s elapsed)
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/utils/_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+  [maxpool:maxpool:classholdout:BetaBlocker:0] 103737 sigs, 25 epochs in 232.0s, final loss=1.2332 (init=4.9521)
+[maxpool] BetaBlocker: auroc full=0.997 cold=0.980 delta=-0.017 p=0.3125 (3783s elapsed)
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/utils/_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+  [maxpool:maxpool:classholdout:Antipsychotic:0] 103695 sigs, 25 epochs in 231.5s, final loss=1.2316 (init=4.9443)
+[maxpool] Antipsychotic: auroc full=0.900 cold=0.969 delta=+0.069 p=0.0020 (4019s elapsed)
+  [gin:gin:full:0] 103989 sigs, 25 epochs in 209.2s, final loss=1.1244 (init=5.0627)
+GIN full embedded (4228s elapsed)
+  [gin:gin:classholdout:AED:0] 103319 sigs, 25 epochs in 192.1s, final loss=1.1402 (init=5.0743)
+[gin] AED: auroc full=0.653 cold=0.788 delta=+0.135 p=0.0039 (4426s elapsed)
+  [gin:gin:classholdout:Statin:0] 103773 sigs, 25 epochs in 207.1s, final loss=1.1354 (init=5.1070)
+[gin] Statin: auroc full=0.992 cold=0.975 delta=-0.017 p=0.0039 (4636s elapsed)
+  [gin:gin:classholdout:SSRI:0] 103737 sigs, 25 epochs in 207.9s, final loss=1.1384 (init=5.1091)
+[gin] SSRI: auroc full=0.952 cold=0.908 delta=-0.044 p=0.5938 (4847s elapsed)
+  [gin:gin:classholdout:NSAID:0] 103653 sigs, 25 epochs in 207.8s, final loss=1.1266 (init=5.1299)
+[gin] NSAID: auroc full=0.758 cold=0.705 delta=-0.053 p=0.0254 (5059s elapsed)
+  [gin:gin:classholdout:BetaBlocker:0] 103737 sigs, 25 epochs in 207.1s, final loss=1.1381 (init=5.0999)
+[gin] BetaBlocker: auroc full=0.993 cold=0.923 delta=-0.069 p=0.0391 (5270s elapsed)
+  [gin:gin:classholdout:Antipsychotic:0] 103695 sigs, 25 epochs in 206.1s, final loss=1.1181 (init=5.1083)
+[gin] Antipsychotic: auroc full=0.879 cold=0.896 delta=+0.017 p=0.8203 (5480s elapsed)
+
+Wrote gnn_variant_auroc_followup.csv, DONE in 5479.9s

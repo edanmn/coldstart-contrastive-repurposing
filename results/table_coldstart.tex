@@ -1,0 +1,13 @@
+\begin{table}[t]
+\caption{Cold-start generalization gap: class-holdout vs.\ full-data vs.\ random-holdout-control pretraining, mean AUROC (concat probe).}
+\label{tab:coldstart}
+\begin{center}\small
+\begin{tabular}{lcccccc}
+\toprule
+Regime & AED & Statin & SSRI & NSAID & Beta-blocker & Antipsychotic \\
+\midrule
+Full & 0.518$\pm$0.075 & 0.954$\pm$0.057 & 0.678$\pm$0.174 & 0.678$\pm$0.086 & 0.916$\pm$0.099 & 0.546$\pm$0.258 \\
+Random-holdout (control, avg of 3) & 0.552$\pm$0.080 & 0.946$\pm$0.064 & 0.662$\pm$0.148 & 0.711$\pm$0.075 & 0.934$\pm$0.083 & 0.563$\pm$0.221 \\
+Class-holdout (cold-start) & 0.716$\pm$0.163 & 0.844$\pm$0.212 & 0.778$\pm$0.179 & 0.705$\pm$0.173 & 0.967$\pm$0.053 & 0.826$\pm$0.156 \\
+\bottomrule
+\end{tabular}\end{center}\end{table}

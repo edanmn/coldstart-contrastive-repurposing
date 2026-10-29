@@ -1,0 +1,22 @@
+node_dim=29, n_drugs=1725, n_sigs=103989
+full regime embedded (425s elapsed)
+  [frozen-extractor:classholdout:AED:0] 103319 sigs, 25 epochs in 176.7s, final loss=1.2513 (init=4.4384), trainable=930305 frozen=36864
+AED: within-cos full=0.3055 cold(frozen-extractor)=0.2270 | to-bg full=0.2339 cold=0.1694 (602s elapsed)
+  [frozen-extractor:classholdout:Statin:0] 103773 sigs, 25 epochs in 180.7s, final loss=1.2539 (init=4.4380), trainable=930305 frozen=36864
+Statin: within-cos full=0.6175 cold(frozen-extractor)=0.5819 | to-bg full=0.2042 cold=0.1446 (783s elapsed)
+  [frozen-extractor:classholdout:SSRI:0] 103737 sigs, 25 epochs in 212.6s, final loss=1.2493 (init=4.4116), trainable=930305 frozen=36864
+SSRI: within-cos full=0.5117 cold(frozen-extractor)=0.3841 | to-bg full=0.2526 cold=0.1750 (995s elapsed)
+  [frozen-extractor:classholdout:NSAID:0] 103653 sigs, 25 epochs in 203.2s, final loss=1.2511 (init=4.4712), trainable=930305 frozen=36864
+NSAID: within-cos full=0.4601 cold(frozen-extractor)=0.3258 | to-bg full=0.2763 cold=0.1667 (1199s elapsed)
+  [frozen-extractor:classholdout:BetaBlocker:0] 103737 sigs, 25 epochs in 185.6s, final loss=1.2539 (init=4.4394), trainable=930305 frozen=36864
+BetaBlocker: within-cos full=0.5862 cold(frozen-extractor)=0.5154 | to-bg full=0.2438 cold=0.1726 (1385s elapsed)
+  [frozen-extractor:classholdout:Antipsychotic:0] 103695 sigs, 25 epochs in 174.1s, final loss=1.2493 (init=4.4078), trainable=930305 frozen=36864
+Antipsychotic: within-cos full=0.4497 cold(frozen-extractor)=0.3627 | to-bg full=0.2466 cold=0.1870 (1559s elapsed)
+
+Wrote gnn_frozen_extractor_diagnostics.csv, DONE in 1558.8s
+  [frozen-extractor:frozen_extractor:classholdout:AED:0] 103319 sigs, 25 epochs in 1091.1s, final loss=1.2404 (init=4.4293), trainable=930305 frozen=36864
+  [frozen-extractor:frozen_extractor:classholdout:Statin:0] 103773 sigs, 25 epochs in 215.7s, final loss=1.2326 (init=4.4265), trainable=930305 frozen=36864
+  [frozen-extractor:frozen_extractor:classholdout:SSRI:0] 103737 sigs, 25 epochs in 215.7s, final loss=1.2394 (init=4.3947), trainable=930305 frozen=36864
+  [frozen-extractor:frozen_extractor:classholdout:NSAID:0] 103653 sigs, 25 epochs in 215.5s, final loss=1.2406 (init=4.4661), trainable=930305 frozen=36864
+  [frozen-extractor:frozen_extractor:classholdout:BetaBlocker:0] 103737 sigs, 25 epochs in 218.4s, final loss=1.2446 (init=4.4307), trainable=930305 frozen=36864
+  [frozen-extractor:frozen_extractor:classholdout:Antipsychotic:0] 103695 sigs, 25 epochs in 214.6s, final loss=1.2373 (init=4.4022), trainable=930305 frozen=36864

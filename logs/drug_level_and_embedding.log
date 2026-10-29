@@ -1,0 +1,15 @@
+Loaded existing full-regime structure embeddings: (1725, 256)
+class_AED: LOPO n=16 mean_rank_full=0.536 mean_rank_cold=0.846 median_delta=+0.233 min=-0.470 max=+0.823 p_drug_paired=0.0013
+class_AED: embedding within-class cos full=0.1974 cold=0.3284 | NN5 same-class frac full=0.038 cold=0.050 (194s elapsed)
+class_Statin: LOPO n=5 mean_rank_full=0.994 mean_rank_cold=0.947 median_delta=-0.007 min=-0.207 max=+0.003 p_drug_paired=0.2500
+class_Statin: embedding within-class cos full=0.4993 cold=0.4832 | NN5 same-class frac full=0.160 cold=0.240 (309s elapsed)
+class_SSRI: LOPO n=6 mean_rank_full=0.818 mean_rank_cold=0.849 median_delta=-0.003 min=-0.403 max=+0.337 p_drug_paired=0.8125
+class_SSRI: embedding within-class cos full=0.2868 cold=0.3796 | NN5 same-class frac full=0.067 cold=0.067 (410s elapsed)
+class_NSAID: LOPO n=8 mean_rank_full=0.820 mean_rank_cold=0.908 median_delta=+0.027 min=-0.110 max=+0.340 p_drug_paired=0.2969
+class_NSAID: embedding within-class cos full=0.3027 cold=0.3852 | NN5 same-class frac full=0.050 cold=0.075 (509s elapsed)
+class_BetaBlocker: LOPO n=6 mean_rank_full=0.909 mean_rank_cold=0.994 median_delta=+0.008 min=+0.000 max=+0.437 p_drug_paired=0.0625
+class_BetaBlocker: embedding within-class cos full=0.2835 cold=0.5249 | NN5 same-class frac full=0.000 cold=0.133 (607s elapsed)
+class_Antipsychotic: LOPO n=7 mean_rank_full=0.598 mean_rank_cold=0.873 median_delta=+0.367 min=-0.207 max=+0.543 p_drug_paired=0.0781
+class_Antipsychotic: embedding within-class cos full=0.1512 cold=0.3226 | NN5 same-class frac full=0.000 cold=0.057 (705s elapsed)
+
+Wrote drug_level_lopo.csv and embedding_space_analysis.csv, DONE in 705.1s

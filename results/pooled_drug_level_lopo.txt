@@ -1,0 +1,9 @@
+pooled_n,48
+pooled_mean_delta,0.1680
+pooled_median_delta,0.0417
+pooled_p,0.000233
+pooled_ci_lo,0.0890
+pooled_ci_hi,0.2512
+no_aed_n,32
+no_aed_mean_delta,0.0968
+no_aed_p,0.035889

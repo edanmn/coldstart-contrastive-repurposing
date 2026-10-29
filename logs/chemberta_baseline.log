@@ -1,0 +1,33 @@
+Embedding 1725 SMILES with seyonec/ChemBERTa-zinc-base-v1 on cuda...
+Skipping import of cpp extensions due to incompatible torch version 2.6.0+cu124 for torchao version 0.16.0             Please see https://github.com/pytorch/ao/issues/2919 for more info
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 50234.11it/s]
+[1mRobertaModel LOAD REPORT[0m from: seyonec/ChemBERTa-zinc-base-v1
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.decoder.weight    | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.decoder.bias      | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  embeddings shape: (1725, 768)
+  class_AED: done
+  class_Statin: done
+  class_SSRI: done
+  class_NSAID: done
+  class_BetaBlocker: done
+  class_Antipsychotic: done
+                         mean       std  count
+class                                         
+class_AED            0.634944  0.044931     10
+class_Antipsychotic  0.768833  0.189292     10
+class_BetaBlocker    0.876167  0.149600     10
+class_NSAID          0.617778  0.186617     10
+class_SSRI           0.929833  0.097044     10
+class_Statin         0.885667  0.107112     10
+
+Wrote ../results/chemberta_baseline.csv

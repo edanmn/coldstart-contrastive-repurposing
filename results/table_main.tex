@@ -1,0 +1,16 @@
+\begin{table}[t]
+\caption{Main downstream results: mean$\pm$std AUROC over 10 repeated drug-disjoint subsampling seeds, full-data pretraining regime, concatenated (structure+expression) probe.}
+\label{tab:main}
+\begin{center}\small
+\begin{tabular}{lcccccc}
+\toprule
+Method & AED & Statin & SSRI & NSAID & Beta-blocker & Antipsychotic \\
+\midrule
+Random & 0.515$\pm$0.091 & 0.500$\pm$0.199 & 0.500$\pm$0.199 & 0.496$\pm$0.154 & 0.500$\pm$0.199 & 0.500$\pm$0.199 \\
+Neighbor connectivity (param.-free) & 0.489$\pm$0.105 & 0.690$\pm$0.172 & 0.526$\pm$0.131 & 0.559$\pm$0.119 & 0.700$\pm$0.144 & 0.569$\pm$0.120 \\
+Raw ECFP4 + RF & 0.784$\pm$0.075 & 0.987$\pm$0.040 & 0.935$\pm$0.080 & 0.838$\pm$0.085 & 0.992$\pm$0.015 & 0.968$\pm$0.027 \\
+Raw expression + RF & 0.506$\pm$0.102 & 0.733$\pm$0.197 & 0.353$\pm$0.103 & 0.490$\pm$0.145 & 0.577$\pm$0.163 & 0.386$\pm$0.169 \\
+Raw concat + RF & 0.490$\pm$0.072 & 0.944$\pm$0.090 & 0.448$\pm$0.132 & 0.556$\pm$0.158 & 0.879$\pm$0.111 & 0.494$\pm$0.234 \\
+\textbf{Contrastive (full, concat)} & \textbf{0.518$\pm$0.075} & \textbf{0.954$\pm$0.057} & \textbf{0.678$\pm$0.174} & \textbf{0.678$\pm$0.086} & \textbf{0.916$\pm$0.099} & \textbf{0.546$\pm$0.258} \\
+\bottomrule
+\end{tabular}\end{center}\end{table}

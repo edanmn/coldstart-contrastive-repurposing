@@ -1,0 +1,40 @@
+  [pretrain:randholdout_perclass:AED:0] 102918 sigs, 25 epochs in 99.9s, final loss=0.6582 (init=3.6394)
+  [pretrain:randholdout_perclass:AED:1] 103048 sigs, 25 epochs in 98.8s, final loss=0.6516 (init=3.6552)
+  [pretrain:randholdout_perclass:AED:2] 103002 sigs, 25 epochs in 98.1s, final loss=0.6595 (init=3.6355)
+AED: n_pos=16, trained 3 size-matched random-holdout models (305s elapsed)
+  [pretrain:randholdout_perclass:Statin:0] 103779 sigs, 25 epochs in 96.5s, final loss=0.6533 (init=3.6375)
+  [pretrain:randholdout_perclass:Statin:1] 103586 sigs, 25 epochs in 96.8s, final loss=0.6552 (init=3.6511)
+  [pretrain:randholdout_perclass:Statin:2] 103779 sigs, 25 epochs in 95.3s, final loss=0.6558 (init=3.6539)
+Statin: n_pos=5, trained 3 size-matched random-holdout models (615s elapsed)
+  [pretrain:randholdout_perclass:SSRI:0] 103737 sigs, 25 epochs in 95.3s, final loss=0.6542 (init=3.6439)
+  [pretrain:randholdout_perclass:SSRI:1] 103570 sigs, 25 epochs in 95.1s, final loss=0.6488 (init=3.6401)
+  [pretrain:randholdout_perclass:SSRI:2] 103741 sigs, 25 epochs in 96.1s, final loss=0.6529 (init=3.6519)
+SSRI: n_pos=6, trained 3 size-matched random-holdout models (915s elapsed)
+  [pretrain:randholdout_perclass:NSAID:0] 103653 sigs, 25 epochs in 96.3s, final loss=0.6585 (init=3.6379)
+  [pretrain:randholdout_perclass:NSAID:1] 103485 sigs, 25 epochs in 99.6s, final loss=0.6502 (init=3.6573)
+  [pretrain:randholdout_perclass:NSAID:2] 103586 sigs, 25 epochs in 99.0s, final loss=0.6506 (init=3.6585)
+NSAID: n_pos=8, trained 3 size-matched random-holdout models (1225s elapsed)
+  [pretrain:randholdout_perclass:BetaBlocker:0] 103737 sigs, 25 epochs in 99.1s, final loss=0.6563 (init=3.6399)
+  [pretrain:randholdout_perclass:BetaBlocker:1] 103570 sigs, 25 epochs in 99.1s, final loss=0.6505 (init=3.6327)
+  [pretrain:randholdout_perclass:BetaBlocker:2] 103737 sigs, 25 epochs in 96.9s, final loss=0.6545 (init=3.6631)
+BetaBlocker: n_pos=6, trained 3 size-matched random-holdout models (1539s elapsed)
+  [pretrain:randholdout_perclass:Antipsychotic:0] 103575 sigs, 25 epochs in 98.2s, final loss=0.6537 (init=3.6361)
+  [pretrain:randholdout_perclass:Antipsychotic:1] 103527 sigs, 25 epochs in 98.1s, final loss=0.6526 (init=3.6668)
+  [pretrain:randholdout_perclass:Antipsychotic:2] 103695 sigs, 25 epochs in 98.6s, final loss=0.6581 (init=3.6500)
+Antipsychotic: n_pos=7, trained 3 size-matched random-holdout models (1851s elapsed)
+class          view     
+AED            concat       0.551852
+               structure    0.571519
+Antipsychotic  concat       0.563000
+               structure    0.560222
+BetaBlocker    concat       0.934444
+               structure    0.940556
+NSAID          concat       0.710741
+               structure    0.757630
+SSRI           concat       0.662111
+               structure    0.703889
+Statin         concat       0.945778
+               structure    0.959444
+Name: auroc, dtype: float64
+
+Wrote ../results/random_holdout_per_class.csv, DONE in 1864.6s

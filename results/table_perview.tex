@@ -1,0 +1,13 @@
+\begin{table}[t]
+\caption{Cold-start generalization gap by embedding view: class-holdout minus full-data pretraining mean AUROC (concat probe uses both views; positive = cold-start wins). Each cell aggregates 3 pretraining seeds $\times$ 10 subsampling seeds per regime. $^{*}p{<}0.05$, $^{**}p{<}0.01$ (Wilcoxon signed-rank, paired by subsampling seed).}
+\label{tab:perview}
+\begin{center}\small
+\begin{tabular}{lcccccc}
+\toprule
+View & AED & Statin & SSRI & NSAID & Beta-blocker & Antipsychotic \\
+\midrule
+Structure & $+0.290^{**}$ & $-0.085$ & $+0.239^{**}$ & $+0.076$ & $+0.062^{**}$ & $+0.383^{**}$ \\
+Expression & $-0.013$ & $-0.179^{**}$ & $-0.188^{**}$ & $-0.055^{**}$ & $-0.104^{**}$ & $-0.042^{**}$ \\
+Concat & $+0.198^{**}$ & $-0.110$ & $+0.100^{*}$ & $+0.026$ & $+0.051$ & $+0.280^{**}$ \\
+\bottomrule
+\end{tabular}\end{center}\end{table}

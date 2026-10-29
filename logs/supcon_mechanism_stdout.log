@@ -1,0 +1,26 @@
+  [pretrain:supcon:class_AED:0] 103989 sigs, 25 epochs in 108.9s, final loss=0.6639
+  [pretrain:supcon:class_AED:1] 103989 sigs, 25 epochs in 103.5s, final loss=0.6718
+  [pretrain:supcon:class_AED:2] 103989 sigs, 25 epochs in 104.3s, final loss=0.6664
+class_AED done (328s elapsed)
+  [pretrain:supcon:class_Statin:0] 103989 sigs, 25 epochs in 101.9s, final loss=0.6590
+  [pretrain:supcon:class_Statin:1] 103989 sigs, 25 epochs in 100.6s, final loss=0.6587
+  [pretrain:supcon:class_Statin:2] 103989 sigs, 25 epochs in 103.6s, final loss=0.6548
+class_Statin done (641s elapsed)
+  [pretrain:supcon:class_SSRI:0] 103989 sigs, 25 epochs in 100.5s, final loss=0.6571
+  [pretrain:supcon:class_SSRI:1] 103989 sigs, 25 epochs in 102.0s, final loss=0.6619
+  [pretrain:supcon:class_SSRI:2] 103989 sigs, 25 epochs in 103.4s, final loss=0.6573
+class_SSRI done (954s elapsed)
+  [pretrain:supcon:class_NSAID:0] 103989 sigs, 25 epochs in 101.9s, final loss=0.6574
+  [pretrain:supcon:class_NSAID:1] 103989 sigs, 25 epochs in 102.8s, final loss=0.6631
+  [pretrain:supcon:class_NSAID:2] 103989 sigs, 25 epochs in 102.1s, final loss=0.6577
+class_NSAID done (1268s elapsed)
+  [pretrain:supcon:class_BetaBlocker:0] 103989 sigs, 25 epochs in 108.2s, final loss=0.6552
+  [pretrain:supcon:class_BetaBlocker:1] 103989 sigs, 25 epochs in 104.1s, final loss=0.6606
+  [pretrain:supcon:class_BetaBlocker:2] 103989 sigs, 25 epochs in 102.5s, final loss=0.6566
+class_BetaBlocker done (1589s elapsed)
+  [pretrain:supcon:class_Antipsychotic:0] 103989 sigs, 25 epochs in 104.1s, final loss=0.6550
+  [pretrain:supcon:class_Antipsychotic:1] 103989 sigs, 25 epochs in 102.2s, final loss=0.6609
+  [pretrain:supcon:class_Antipsychotic:2] 103989 sigs, 25 epochs in 101.9s, final loss=0.6575
+class_Antipsychotic done (1904s elapsed)
+
+Wrote ../results/supcon_mechanism.csv, DONE in 1903.5s
