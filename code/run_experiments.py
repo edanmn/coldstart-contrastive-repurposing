@@ -238,6 +238,11 @@ def main():
         json.dump(align_uniform_log, f, indent=2)
 
     # ---- 2. Random-holdout CONTROL pretraining runs (3 seeds, matched size to avg class) ----
+    # Superseded: this uses one avg-class-size holdout reused for every class, writing
+    # contrastive_randholdout{0,1,2}_concat rows that make_tables_figures.py does not read.
+    # Table 3 in the paper reports the per-class-size-matched control from
+    # random_holdout_per_class.py instead; kept here for provenance, not as a source of any
+    # reported number.
     avg_class_size = int(np.mean([int(class_labels_by_drug[c].reindex(all_drug_uids).fillna(0).sum()) for c in CLASS_COLS]))
     print(f"\n=== Pretraining: RANDOM-HOLDOUT control (holdout size={avg_class_size}) ===", flush=True)
     random_holdout_embeds = []
