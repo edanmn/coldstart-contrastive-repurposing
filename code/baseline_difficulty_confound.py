@@ -103,8 +103,10 @@ def main():
 
     ecfp4 = df[df.featurization == "ecfp4"]["resid"].values
     others = df[df.featurization != "ecfp4"]["resid"].values
-    u_pooled, p_pooled = mannwhitneyu(ecfp4, others, alternative="greater")
-    print(f"\nMann-Whitney, ECFP4's 6 residuals vs. all other 42 pooled, one-sided: "
+    # Two-sided: ECFP4 was already ranked first by eye before this test was run, so a one-sided
+    # test chosen after seeing the ranking would be a post-hoc, non-pre-registered test.
+    u_pooled, p_pooled = mannwhitneyu(ecfp4, others, alternative="two-sided")
+    print(f"\nMann-Whitney, ECFP4's 6 residuals vs. all other 42 pooled, two-sided: "
           f"U={u_pooled:.1f}, p={p_pooled:.4f}")
 
     print("Pairwise Mann-Whitney, ECFP4 vs. each other featurization (n=6 each, one-sided):")
@@ -122,8 +124,9 @@ def main():
     print(f"\nKruskal-Wallis omnibus test across all 8 featurizations: "
           f"H={h_stat:.3f}, p={p_kw:.4f}")
     print("No individual pairwise comparison clears uncorrected p<0.05 with only 6 classes "
-          "per featurization, and the omnibus test finds no overall difference: the residual "
-          "ranking is suggestive (significant only pooled, one-sided), not established.")
+          "per featurization, and the omnibus test finds no overall difference, and the pooled "
+          "two-sided test alone does not reach p<0.05 either: the residual ranking is "
+          "suggestive, not established.")
 
     df.to_csv(f"{RESULTS}/baseline_difficulty_confound.csv", index=False)
     summary.to_csv(f"{RESULTS}/baseline_difficulty_confound_summary.csv")
