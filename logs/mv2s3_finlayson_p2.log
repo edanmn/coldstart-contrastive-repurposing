@@ -1,0 +1,47 @@
+[finlayson_p2] 103989 sigs, 1725 drugs, device=cuda
+  [pretrain:finlayson_p2:full:0] 103989 sigs, 25 epochs in 240.6s, final loss=0.3447 (init=0.6095)
+  [pretrain:finlayson_p2:full:1] 103989 sigs, 25 epochs in 232.0s, final loss=0.3470 (init=0.6135)
+  [pretrain:finlayson_p2:full:2] 103989 sigs, 25 epochs in 230.6s, final loss=0.3434 (init=0.6127)
+  [pretrain:finlayson_p2:hold:AED:0] 103319 sigs, 25 epochs in 228.2s, final loss=0.3485 (init=0.6201)
+  [pretrain:finlayson_p2:hold:AED:1] 103319 sigs, 25 epochs in 230.9s, final loss=0.3457 (init=0.6134)
+  [pretrain:finlayson_p2:hold:AED:2] 103319 sigs, 25 epochs in 228.9s, final loss=0.3439 (init=0.6089)
+  [pretrain:finlayson_p2:matched:AED:0] 77388 sigs, 25 epochs in 169.0s, final loss=0.3356 (init=0.6591)
+  [pretrain:finlayson_p2:matched:AED:1] 77388 sigs, 25 epochs in 166.4s, final loss=0.3370 (init=0.6524)
+  [pretrain:finlayson_p2:matched:AED:2] 77388 sigs, 25 epochs in 165.6s, final loss=0.3380 (init=0.6620)
+[finlayson_p2] AED: full=0.762 hold=0.709 matched=0.751 mem_matched=0.517 1904s
+  [pretrain:finlayson_p2:hold:Statin:0] 103773 sigs, 25 epochs in 226.8s, final loss=0.3459 (init=0.6147)
+  [pretrain:finlayson_p2:hold:Statin:1] 103773 sigs, 25 epochs in 226.3s, final loss=0.3469 (init=0.6138)
+  [pretrain:finlayson_p2:hold:Statin:2] 103773 sigs, 25 epochs in 226.0s, final loss=0.3437 (init=0.6111)
+  [pretrain:finlayson_p2:matched:Statin:0] 81373 sigs, 25 epochs in 170.6s, final loss=0.3384 (init=0.6676)
+  [pretrain:finlayson_p2:matched:Statin:1] 81373 sigs, 25 epochs in 171.6s, final loss=0.3413 (init=0.6653)
+  [pretrain:finlayson_p2:matched:Statin:2] 81373 sigs, 25 epochs in 172.4s, final loss=0.3411 (init=0.6706)
+[finlayson_p2] Statin: full=0.973 hold=0.990 matched=0.986 mem_matched=0.507 3098s
+  [pretrain:finlayson_p2:hold:SSRI:0] 103737 sigs, 25 epochs in 229.5s, final loss=0.3484 (init=0.6149)
+  [pretrain:finlayson_p2:hold:SSRI:1] 103737 sigs, 25 epochs in 231.5s, final loss=0.3469 (init=0.6133)
+  [pretrain:finlayson_p2:hold:SSRI:2] 103737 sigs, 25 epochs in 232.5s, final loss=0.3409 (init=0.6093)
+  [pretrain:finlayson_p2:matched:SSRI:0] 80627 sigs, 25 epochs in 171.6s, final loss=0.3397 (init=0.6740)
+  [pretrain:finlayson_p2:matched:SSRI:1] 80627 sigs, 25 epochs in 173.4s, final loss=0.3412 (init=0.6766)
+  [pretrain:finlayson_p2:matched:SSRI:2] 80627 sigs, 25 epochs in 173.2s, final loss=0.3439 (init=0.6799)
+[finlayson_p2] SSRI: full=0.963 hold=0.935 matched=0.962 mem_matched=0.503 4311s
+  [pretrain:finlayson_p2:hold:NSAID:0] 103653 sigs, 25 epochs in 230.0s, final loss=0.3468 (init=0.6135)
+  [pretrain:finlayson_p2:hold:NSAID:1] 103653 sigs, 25 epochs in 230.6s, final loss=0.3495 (init=0.6175)
+  [pretrain:finlayson_p2:hold:NSAID:2] 103653 sigs, 25 epochs in 227.1s, final loss=0.3400 (init=0.6147)
+  [pretrain:finlayson_p2:matched:NSAID:0] 76755 sigs, 25 epochs in 165.7s, final loss=0.3369 (init=0.6503)
+  [pretrain:finlayson_p2:matched:NSAID:1] 76755 sigs, 25 epochs in 164.9s, final loss=0.3407 (init=0.6439)
+  [pretrain:finlayson_p2:matched:NSAID:2] 76755 sigs, 25 epochs in 164.8s, final loss=0.3372 (init=0.6529)
+[finlayson_p2] NSAID: full=0.806 hold=0.735 matched=0.710 mem_matched=0.476 5496s
+  [pretrain:finlayson_p2:hold:BetaBlocker:0] 103737 sigs, 25 epochs in 226.3s, final loss=0.3490 (init=0.6145)
+  [pretrain:finlayson_p2:hold:BetaBlocker:1] 103737 sigs, 25 epochs in 229.8s, final loss=0.3479 (init=0.6171)
+  [pretrain:finlayson_p2:hold:BetaBlocker:2] 103737 sigs, 25 epochs in 229.5s, final loss=0.3405 (init=0.6115)
+  [pretrain:finlayson_p2:matched:BetaBlocker:0] 81210 sigs, 25 epochs in 148.5s, final loss=0.3424 (init=0.6687)
+  [pretrain:finlayson_p2:matched:BetaBlocker:1] 81210 sigs, 25 epochs in 140.4s, final loss=0.3427 (init=0.6627)
+  [pretrain:finlayson_p2:matched:BetaBlocker:2] 81210 sigs, 25 epochs in 140.7s, final loss=0.3439 (init=0.6711)
+[finlayson_p2] BetaBlocker: full=0.976 hold=0.968 matched=0.960 mem_matched=0.485 6612s
+  [pretrain:finlayson_p2:hold:Antipsychotic:0] 103695 sigs, 25 epochs in 187.5s, final loss=0.3476 (init=0.6177)
+  [pretrain:finlayson_p2:hold:Antipsychotic:1] 103695 sigs, 25 epochs in 187.4s, final loss=0.3472 (init=0.6152)
+  [pretrain:finlayson_p2:hold:Antipsychotic:2] 103695 sigs, 25 epochs in 186.8s, final loss=0.3419 (init=0.6110)
+  [pretrain:finlayson_p2:matched:Antipsychotic:0] 81046 sigs, 25 epochs in 140.7s, final loss=0.3408 (init=0.6727)
+  [pretrain:finlayson_p2:matched:Antipsychotic:1] 81046 sigs, 25 epochs in 141.3s, final loss=0.3436 (init=0.6715)
+  [pretrain:finlayson_p2:matched:Antipsychotic:2] 81046 sigs, 25 epochs in 141.8s, final loss=0.3398 (init=0.6779)
+[finlayson_p2] Antipsychotic: full=0.982 hold=0.974 matched=0.952 mem_matched=0.485 7599s
+DONE 7599s

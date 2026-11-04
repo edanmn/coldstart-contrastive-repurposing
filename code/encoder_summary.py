@@ -7,7 +7,7 @@ from run_experiments import RESULTS
 R = RESULTS
 rows = []
 specs = [("ECFP4 MLP", "ecfp4_p2", "P2", 3), ("ChemBERTa MLP", "chemberta_p2", "P2", 3),
-         ("GCN", "gcn_p2", "P2", 1), ("D-MPNN (Finlayson et al.)", "finlayson_p2", "P2", 1),
+         ("GCN", "gcn_p2", "P2", 3), ("D-MPNN (Finlayson et al.)", "finlayson_p2", "P2", 3),
          ("Random vectors", None, "P2", 3), ("ECFP4 MLP", "ecfp4_p1", "P1", 3),
          ("Random vectors", "random_p1", "P1", 3)]
 for name, tag, ds, ns in specs:
