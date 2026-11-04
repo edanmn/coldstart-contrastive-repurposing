@@ -20,7 +20,7 @@ for ci, cls in enumerate(CLASS_COLS):
     rng = np.random.RandomState(500 + ci)
     Mp = rng.permutation(M); half = len(M) // 2
     neg_tr, bg = Mp[:half], Mp[half:]
-    arms = {"full": full, **{k: z[k].astype(np.float32) for k in ["hold", "sizehold", "matched"]}}
+    arms = {"full": full, **{k: z[k].astype(np.float32) for k in ["hold", "sizehold", "matched"] if k in z.files}}
     for d in pos:
         others = pos[pos != d]
         rec = dict(input=inp, dataset=ds, cls=short, drug_uid=int(d))

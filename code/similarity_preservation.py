@@ -11,6 +11,7 @@ from scipy.stats import spearmanr, wilcoxon
 from run_experiments import DATA, RESULTS, CLASS_COLS
 
 inp = sys.argv[1] if len(sys.argv) > 1 else "ecfp4"
+ds = sys.argv[2] if len(sys.argv) > 2 else "p2"
 fp = np.load(f"{DATA}/drug_ecfp4.npy").astype(np.float32)
 def tanimoto(ix):
     X = fp[ix]; inter = X @ X.T; cnt = X.sum(1)
@@ -20,7 +21,7 @@ def cos(Z):
 def rho(Z, ix):
     iu = np.triu_indices(len(ix), 1)
     return spearmanr(cos(Z[ix].astype(np.float32))[iu], tanimoto(ix)[iu]).correlation
-E = f"{RESULTS}/membership_v2_embeddings/{inp}_p2"
+E = f"{RESULTS}/membership_v2_embeddings/{inp}_{ds}"
 full = np.load(f"{E}_full.npy")
 rows = []
 for cls in CLASS_COLS:
@@ -37,7 +38,7 @@ for cls in CLASS_COLS:
                          rho_class_full=rho(full[s], pos), rho_class_matched=rho(z["matched"][s], pos),
                          rho_class_hold=rho(z["hold"][s], pos)))
 d = pd.DataFrame(rows)
-d.to_csv(f"{RESULTS}/similarity_preservation_{inp}.csv", index=False)
+d.to_csv(f"{RESULTS}/similarity_preservation_{inp}_{ds}.csv", index=False)
 g = d.groupby("cls").mean(numeric_only=True).drop(columns="seed")
 print(g.round(3).to_string())
 if len(g) >= 5:

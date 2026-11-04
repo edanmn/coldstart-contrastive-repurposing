@@ -1,0 +1,21 @@
+[finlayson_p2] 103989 sigs, 1725 drugs, device=cuda
+  [pretrain:finlayson_p2:full:0] 103989 sigs, 25 epochs in 377.6s, final loss=0.3471 (init=0.6095)
+  [pretrain:finlayson_p2:hold:AED:0] 103319 sigs, 25 epochs in 375.0s, final loss=0.3481 (init=0.6204)
+  [pretrain:finlayson_p2:matched:AED:0] 77388 sigs, 25 epochs in 268.3s, final loss=0.3361 (init=0.6593)
+[finlayson_p2] AED: full=0.761 hold=0.694 matched=0.750 mem_matched=0.507 1029s
+  [pretrain:finlayson_p2:hold:Statin:0] 103773 sigs, 25 epochs in 402.9s, final loss=0.3452 (init=0.6153)
+  [pretrain:finlayson_p2:matched:Statin:0] 81373 sigs, 25 epochs in 294.5s, final loss=0.3380 (init=0.6678)
+[finlayson_p2] Statin: full=0.976 hold=0.992 matched=0.981 mem_matched=0.503 1727s
+  [pretrain:finlayson_p2:hold:SSRI:0] 103737 sigs, 25 epochs in 399.1s, final loss=0.3484 (init=0.6151)
+  [pretrain:finlayson_p2:matched:SSRI:0] 80627 sigs, 25 epochs in 297.0s, final loss=0.3400 (init=0.6739)
+[finlayson_p2] SSRI: full=0.963 hold=0.931 matched=0.937 mem_matched=0.503 2424s
+  [pretrain:finlayson_p2:hold:NSAID:0] 103653 sigs, 25 epochs in 397.9s, final loss=0.3476 (init=0.6132)
+  [pretrain:finlayson_p2:matched:NSAID:0] 76755 sigs, 25 epochs in 230.3s, final loss=0.3379 (init=0.6504)
+[finlayson_p2] NSAID: full=0.802 hold=0.675 matched=0.602 mem_matched=0.473 3052s
+  [pretrain:finlayson_p2:hold:BetaBlocker:0] 103737 sigs, 25 epochs in 281.4s, final loss=0.3489 (init=0.6139)
+  [pretrain:finlayson_p2:matched:BetaBlocker:0] 81210 sigs, 25 epochs in 221.3s, final loss=0.3417 (init=0.6690)
+[finlayson_p2] BetaBlocker: full=0.990 hold=0.992 matched=0.962 mem_matched=0.483 3556s
+  [pretrain:finlayson_p2:hold:Antipsychotic:0] 103695 sigs, 25 epochs in 273.2s, final loss=0.3458 (init=0.6175)
+  [pretrain:finlayson_p2:matched:Antipsychotic:0] 81046 sigs, 25 epochs in 215.7s, final loss=0.3410 (init=0.6727)
+[finlayson_p2] Antipsychotic: full=0.988 hold=0.977 matched=0.940 mem_matched=0.483 4045s
+DONE 4045s

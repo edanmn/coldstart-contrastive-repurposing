@@ -1,0 +1,25 @@
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/rishik/.local/lib/python3.12/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at4_ops16div__Tensor_mode4callERNS_6TensorERKS2_St8optionalIN3c1017basic_string_viewIcEEE
+  import torch_geometric.typing
+/home/rishik/.local/lib/python3.12/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/rishik/.local/lib/python3.12/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN5torch8autograd12VariableInfoC1ERKN2at6TensorE
+  import torch_geometric.typing
+[gcn_p2] 103989 sigs, 1725 drugs, device=cuda
+  [pretrain:gcn_p2:full:0] 103989 sigs, 25 epochs in 261.2s, final loss=1.3948 (init=5.0656)
+  [pretrain:gcn_p2:hold:AED:0] 103319 sigs, 25 epochs in 257.4s, final loss=1.4174 (init=5.0647)
+  [pretrain:gcn_p2:matched:AED:0] 77388 sigs, 25 epochs in 192.1s, final loss=1.1450 (init=5.1207)
+[gcn_p2] AED: full=0.744 hold=0.732 matched=0.738 mem_matched=0.513 730s
+  [pretrain:gcn_p2:hold:Statin:0] 103773 sigs, 25 epochs in 254.3s, final loss=1.4009 (init=5.0695)
+  [pretrain:gcn_p2:matched:Statin:0] 81373 sigs, 25 epochs in 208.8s, final loss=1.1841 (init=5.0396)
+[gcn_p2] Statin: full=0.999 hold=0.988 matched=0.988 mem_matched=0.496 1204s
+  [pretrain:gcn_p2:hold:SSRI:0] 103737 sigs, 25 epochs in 263.3s, final loss=1.4034 (init=5.0597)
+  [pretrain:gcn_p2:matched:SSRI:0] 80627 sigs, 25 epochs in 203.5s, final loss=1.1621 (init=5.0760)
+[gcn_p2] SSRI: full=0.971 hold=0.940 matched=0.982 mem_matched=0.506 1682s
+  [pretrain:gcn_p2:hold:NSAID:0] 103653 sigs, 25 epochs in 265.8s, final loss=1.3925 (init=5.0485)
+  [pretrain:gcn_p2:matched:NSAID:0] 76755 sigs, 25 epochs in 192.8s, final loss=1.1277 (init=5.2028)
+[gcn_p2] NSAID: full=0.745 hold=0.785 matched=0.742 mem_matched=0.485 2157s
+  [pretrain:gcn_p2:hold:BetaBlocker:0] 103737 sigs, 25 epochs in 265.1s, final loss=1.4098 (init=5.0547)
+  [pretrain:gcn_p2:matched:BetaBlocker:0] 81210 sigs, 25 epochs in 206.2s, final loss=1.1756 (init=5.0808)
+[gcn_p2] BetaBlocker: full=0.989 hold=0.980 matched=0.994 mem_matched=0.497 2640s
+  [pretrain:gcn_p2:hold:Antipsychotic:0] 103695 sigs, 25 epochs in 253.6s, final loss=1.4323 (init=5.0536)
+  [pretrain:gcn_p2:matched:Antipsychotic:0] 81046 sigs, 25 epochs in 177.8s, final loss=1.1666 (init=5.0595)
+[gcn_p2] Antipsychotic: full=0.958 hold=0.964 matched=0.929 mem_matched=0.518 3083s
+DONE 3083s

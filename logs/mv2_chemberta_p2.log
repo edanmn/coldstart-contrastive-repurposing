@@ -1,0 +1,47 @@
+[chemberta_p2] 103989 sigs, 1725 drugs, device=cuda
+  [pretrain:chemberta_p2:full:0] 103989 sigs, 25 epochs in 138.6s, final loss=0.7988 (init=4.5875)
+  [pretrain:chemberta_p2:full:1] 103989 sigs, 25 epochs in 138.0s, final loss=0.7890 (init=4.5863)
+  [pretrain:chemberta_p2:full:2] 103989 sigs, 25 epochs in 140.1s, final loss=0.7890 (init=4.5854)
+  [pretrain:chemberta_p2:hold:AED:0] 103319 sigs, 25 epochs in 138.5s, final loss=0.7899 (init=4.5911)
+  [pretrain:chemberta_p2:hold:AED:1] 103319 sigs, 25 epochs in 141.1s, final loss=0.7835 (init=4.5700)
+  [pretrain:chemberta_p2:hold:AED:2] 103319 sigs, 25 epochs in 140.7s, final loss=0.7901 (init=4.5730)
+  [pretrain:chemberta_p2:matched:AED:0] 77388 sigs, 25 epochs in 98.8s, final loss=0.7242 (init=4.6242)
+  [pretrain:chemberta_p2:matched:AED:1] 77388 sigs, 25 epochs in 103.4s, final loss=0.7129 (init=4.6294)
+  [pretrain:chemberta_p2:matched:AED:2] 77388 sigs, 25 epochs in 103.3s, final loss=0.7154 (init=4.6377)
+[chemberta_p2] AED: full=0.598 hold=0.711 matched=0.636 mem_matched=0.811 1182s
+  [pretrain:chemberta_p2:hold:Statin:0] 103773 sigs, 25 epochs in 142.0s, final loss=0.7861 (init=4.5860)
+  [pretrain:chemberta_p2:hold:Statin:1] 103773 sigs, 25 epochs in 143.6s, final loss=0.7894 (init=4.5946)
+  [pretrain:chemberta_p2:hold:Statin:2] 103773 sigs, 25 epochs in 145.3s, final loss=0.7916 (init=4.5811)
+  [pretrain:chemberta_p2:matched:Statin:0] 81373 sigs, 25 epochs in 107.4s, final loss=0.7592 (init=4.5395)
+  [pretrain:chemberta_p2:matched:Statin:1] 81373 sigs, 25 epochs in 109.0s, final loss=0.7535 (init=4.5580)
+  [pretrain:chemberta_p2:matched:Statin:2] 81373 sigs, 25 epochs in 110.6s, final loss=0.7561 (init=4.5497)
+[chemberta_p2] Statin: full=0.989 hold=0.953 matched=0.932 mem_matched=0.822 1973s
+  [pretrain:chemberta_p2:hold:SSRI:0] 103737 sigs, 25 epochs in 138.7s, final loss=0.7876 (init=4.5960)
+  [pretrain:chemberta_p2:hold:SSRI:1] 103737 sigs, 25 epochs in 141.7s, final loss=0.7921 (init=4.5849)
+  [pretrain:chemberta_p2:hold:SSRI:2] 103737 sigs, 25 epochs in 136.3s, final loss=0.7877 (init=4.5819)
+  [pretrain:chemberta_p2:matched:SSRI:0] 80627 sigs, 25 epochs in 110.9s, final loss=0.7459 (init=4.5941)
+  [pretrain:chemberta_p2:matched:SSRI:1] 80627 sigs, 25 epochs in 107.0s, final loss=0.7581 (init=4.5883)
+  [pretrain:chemberta_p2:matched:SSRI:2] 80627 sigs, 25 epochs in 111.2s, final loss=0.7527 (init=4.5965)
+[chemberta_p2] SSRI: full=0.703 hold=0.935 matched=0.931 mem_matched=0.790 2765s
+  [pretrain:chemberta_p2:hold:NSAID:0] 103653 sigs, 25 epochs in 123.1s, final loss=0.7918 (init=4.5964)
+  [pretrain:chemberta_p2:hold:NSAID:1] 103653 sigs, 25 epochs in 123.3s, final loss=0.7920 (init=4.5726)
+  [pretrain:chemberta_p2:hold:NSAID:2] 103653 sigs, 25 epochs in 120.0s, final loss=0.7933 (init=4.5781)
+  [pretrain:chemberta_p2:matched:NSAID:0] 76755 sigs, 25 epochs in 80.9s, final loss=0.6848 (init=4.6988)
+  [pretrain:chemberta_p2:matched:NSAID:1] 76755 sigs, 25 epochs in 80.1s, final loss=0.6802 (init=4.7007)
+  [pretrain:chemberta_p2:matched:NSAID:2] 76755 sigs, 25 epochs in 78.9s, final loss=0.6814 (init=4.6977)
+[chemberta_p2] NSAID: full=0.629 hold=0.684 matched=0.669 mem_matched=0.799 3406s
+  [pretrain:chemberta_p2:hold:BetaBlocker:0] 103737 sigs, 25 epochs in 107.6s, final loss=0.7869 (init=4.5928)
+  [pretrain:chemberta_p2:hold:BetaBlocker:1] 103737 sigs, 25 epochs in 108.5s, final loss=0.7934 (init=4.5825)
+  [pretrain:chemberta_p2:hold:BetaBlocker:2] 103737 sigs, 25 epochs in 109.1s, final loss=0.7923 (init=4.5759)
+  [pretrain:chemberta_p2:matched:BetaBlocker:0] 81210 sigs, 25 epochs in 85.8s, final loss=0.7586 (init=4.5714)
+  [pretrain:chemberta_p2:matched:BetaBlocker:1] 81210 sigs, 25 epochs in 85.5s, final loss=0.7558 (init=4.5680)
+  [pretrain:chemberta_p2:matched:BetaBlocker:2] 81210 sigs, 25 epochs in 83.6s, final loss=0.7625 (init=4.5852)
+[chemberta_p2] BetaBlocker: full=0.968 hold=0.914 matched=0.918 mem_matched=0.793 4019s
+  [pretrain:chemberta_p2:hold:Antipsychotic:0] 103695 sigs, 25 epochs in 88.4s, final loss=0.7899 (init=4.5900)
+  [pretrain:chemberta_p2:hold:Antipsychotic:1] 103695 sigs, 25 epochs in 80.8s, final loss=0.7913 (init=4.5629)
+  [pretrain:chemberta_p2:hold:Antipsychotic:2] 103695 sigs, 25 epochs in 83.3s, final loss=0.7914 (init=4.5743)
+  [pretrain:chemberta_p2:matched:Antipsychotic:0] 81046 sigs, 25 epochs in 62.8s, final loss=0.7678 (init=4.5746)
+  [pretrain:chemberta_p2:matched:Antipsychotic:1] 81046 sigs, 25 epochs in 61.9s, final loss=0.7580 (init=4.5635)
+  [pretrain:chemberta_p2:matched:Antipsychotic:2] 81046 sigs, 25 epochs in 62.5s, final loss=0.7659 (init=4.5797)
+[chemberta_p2] Antipsychotic: full=0.654 hold=0.731 matched=0.719 mem_matched=0.796 4493s
+DONE 4493s

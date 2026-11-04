@@ -1,0 +1,47 @@
+[random_p1] 46726 sigs, 1001 drugs, device=cuda
+  [pretrain:random_p1:full:0] 46726 sigs, 25 epochs in 48.2s, final loss=0.8086 (init=4.6357)
+  [pretrain:random_p1:full:1] 46726 sigs, 25 epochs in 48.4s, final loss=0.8143 (init=4.6206)
+  [pretrain:random_p1:full:2] 46726 sigs, 25 epochs in 48.3s, final loss=0.8141 (init=4.6296)
+  [pretrain:random_p1:hold:AED:0] 46409 sigs, 25 epochs in 47.8s, final loss=0.8143 (init=4.6276)
+  [pretrain:random_p1:hold:AED:1] 46409 sigs, 25 epochs in 47.5s, final loss=0.8076 (init=4.6273)
+  [pretrain:random_p1:hold:AED:2] 46409 sigs, 25 epochs in 56.7s, final loss=0.8125 (init=4.6369)
+  [pretrain:random_p1:matched:AED:0] 35358 sigs, 25 epochs in 37.2s, final loss=0.8370 (init=4.6657)
+  [pretrain:random_p1:matched:AED:1] 35358 sigs, 25 epochs in 36.6s, final loss=0.8226 (init=4.6900)
+  [pretrain:random_p1:matched:AED:2] 35358 sigs, 25 epochs in 36.0s, final loss=0.8332 (init=4.6909)
+[random_p1] AED: full=0.742 hold=0.572 matched=0.398 mem_matched=0.794 438s
+  [pretrain:random_p1:hold:Statin:0] 46401 sigs, 25 epochs in 47.8s, final loss=0.8114 (init=4.6212)
+  [pretrain:random_p1:hold:Statin:1] 46401 sigs, 25 epochs in 48.0s, final loss=0.8106 (init=4.6245)
+  [pretrain:random_p1:hold:Statin:2] 46401 sigs, 25 epochs in 47.5s, final loss=0.8135 (init=4.6315)
+  [pretrain:random_p1:matched:Statin:0] 32771 sigs, 25 epochs in 33.6s, final loss=0.7517 (init=4.7058)
+  [pretrain:random_p1:matched:Statin:1] 32771 sigs, 25 epochs in 33.7s, final loss=0.7523 (init=4.7177)
+  [pretrain:random_p1:matched:Statin:2] 32771 sigs, 25 epochs in 33.7s, final loss=0.7476 (init=4.7418)
+[random_p1] Statin: full=0.933 hold=0.553 matched=0.468 mem_matched=0.810 711s
+  [pretrain:random_p1:hold:SSRI:0] 46475 sigs, 25 epochs in 47.0s, final loss=0.8167 (init=4.6236)
+  [pretrain:random_p1:hold:SSRI:1] 46475 sigs, 25 epochs in 49.4s, final loss=0.8229 (init=4.6490)
+  [pretrain:random_p1:hold:SSRI:2] 46475 sigs, 25 epochs in 47.8s, final loss=0.8228 (init=4.6366)
+  [pretrain:random_p1:matched:SSRI:0] 34986 sigs, 25 epochs in 36.1s, final loss=0.8043 (init=4.6552)
+  [pretrain:random_p1:matched:SSRI:1] 34986 sigs, 25 epochs in 36.0s, final loss=0.8137 (init=4.6564)
+  [pretrain:random_p1:matched:SSRI:2] 34986 sigs, 25 epochs in 35.8s, final loss=0.8011 (init=4.6502)
+[random_p1] SSRI: full=0.948 hold=0.543 matched=0.511 mem_matched=0.809 994s
+  [pretrain:random_p1:hold:NSAID:0] 46453 sigs, 25 epochs in 50.0s, final loss=0.8127 (init=4.6469)
+  [pretrain:random_p1:hold:NSAID:1] 46453 sigs, 25 epochs in 51.4s, final loss=0.8078 (init=4.6334)
+  [pretrain:random_p1:hold:NSAID:2] 46453 sigs, 25 epochs in 48.0s, final loss=0.8188 (init=4.6338)
+  [pretrain:random_p1:matched:NSAID:0] 32962 sigs, 25 epochs in 33.8s, final loss=0.7805 (init=4.7062)
+  [pretrain:random_p1:matched:NSAID:1] 32962 sigs, 25 epochs in 33.6s, final loss=0.7786 (init=4.7308)
+  [pretrain:random_p1:matched:NSAID:2] 32962 sigs, 25 epochs in 34.2s, final loss=0.7804 (init=4.7344)
+[random_p1] NSAID: full=0.785 hold=0.854 matched=0.619 mem_matched=0.785 1282s
+  [pretrain:random_p1:hold:BetaBlocker:0] 46568 sigs, 25 epochs in 48.5s, final loss=0.8134 (init=4.6579)
+  [pretrain:random_p1:hold:BetaBlocker:1] 46568 sigs, 25 epochs in 47.4s, final loss=0.8162 (init=4.6272)
+  [pretrain:random_p1:hold:BetaBlocker:2] 46568 sigs, 25 epochs in 48.2s, final loss=0.8140 (init=4.6481)
+  [pretrain:random_p1:matched:BetaBlocker:0] 34302 sigs, 25 epochs in 35.0s, final loss=0.8018 (init=4.6511)
+  [pretrain:random_p1:matched:BetaBlocker:1] 34302 sigs, 25 epochs in 35.2s, final loss=0.7985 (init=4.6437)
+  [pretrain:random_p1:matched:BetaBlocker:2] 34302 sigs, 25 epochs in 35.6s, final loss=0.7993 (init=4.6722)
+[random_p1] BetaBlocker: full=0.661 hold=0.500 matched=0.688 mem_matched=0.783 1560s
+  [pretrain:random_p1:hold:Antipsychotic:0] 46482 sigs, 25 epochs in 48.2s, final loss=0.8079 (init=4.6373)
+  [pretrain:random_p1:hold:Antipsychotic:1] 46482 sigs, 25 epochs in 48.6s, final loss=0.8226 (init=4.6333)
+  [pretrain:random_p1:hold:Antipsychotic:2] 46482 sigs, 25 epochs in 47.9s, final loss=0.8137 (init=4.6316)
+  [pretrain:random_p1:matched:Antipsychotic:0] 34096 sigs, 25 epochs in 38.0s, final loss=0.7987 (init=4.6096)
+  [pretrain:random_p1:matched:Antipsychotic:1] 34096 sigs, 25 epochs in 35.3s, final loss=0.7874 (init=4.6278)
+  [pretrain:random_p1:matched:Antipsychotic:2] 34096 sigs, 25 epochs in 35.3s, final loss=0.7980 (init=4.6264)
+[random_p1] Antipsychotic: full=0.806 hold=0.714 matched=0.436 mem_matched=0.799 1855s
+DONE 1855s
